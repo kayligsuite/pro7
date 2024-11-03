@@ -1,0 +1,214 @@
+ /*css banner 2*/
+
+ .banner{
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+
+ @font-face {
+     font-family: 'font_anglo';
+     src: url('https://anglocolombiano.edu.co//templates/gridboxcore/fonts/font_anglo.eot?47949173');
+     src: url('https://anglocolombiano.edu.co//templates/gridboxcore/fonts/font_anglo.eot?47949173#iefix') format('embedded-opentype'),
+     url('https://anglocolombiano.edu.co//templates/gridboxcore/fonts/font_anglo.woff2?47949173') format('woff2'),
+     url('https://anglocolombiano.edu.co//templates/gridboxcore/fonts/font_anglo.woff?47949173') format('woff'),
+     url('https://anglocolombiano.edu.co//templates/gridboxcore/fonts/font_anglo.ttf?47949173') format('truetype'),
+     url('https://anglocolombiano.edu.co//templates/gridboxcore/fonts/font_anglo.svg?47949173#font_anglo') format('svg');
+     font-weight: normal;
+     font-style: normal;
+ }
+ /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+ /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+ /*
+ @media screen and (-webkit-min-device-pixel-ratio:0) {
+   @font-face {
+     font-family: 'font_anglo';
+     src: url('../font/font_anglo.svg?47949173#font_anglo') format('svg');
+   }
+ }
+ */
+
+ [class^="pers-"]:before, [class*=" pers-"]:before {
+     font-family: "font_anglo";
+     font-style: normal;
+     font-weight: normal;
+     speak: none;
+     display: inline-block;
+     text-decoration: inherit;
+     width: 1em;
+     margin-right: .2em;
+     text-align: center;
+     /* opacity: .8; */
+
+     /* For safety - reset parent styles, that can break glyph codes*/
+     font-variant: normal;
+     text-transform: none;
+
+     /* fix buttons height, for twitter bootstrap */
+     line-height: 1em;
+
+     /* Animation center compensation - margins should be symmetric */
+     /* remove if not needed */
+     margin-left: .2em;
+
+     /* you can be more comfortable with increased icons size */
+     /* font-size: 120%; */
+
+     /* Font smoothing. That was taken from TWBS */
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+
+     /* Uncomment for 3D effect */
+     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+ }
+
+ .pers-ccws:before { content: '\a801'; } /* 'ꠁ' */
+ .pers-all4one:before { content: '\a802'; } /* 'ꠂ' */
+ .pers-tics:before { content: '\a803'; } /* 'ꠃ' */
+ .pers-admin:before { content: '\a804'; } /* 'ꠄ' */
+ .pers-prees:before { content: '\a805'; } /* 'ꠅ' */
+ .pers-pagos:before { content: '\a806'; } /* '꠆' */
+ .pers-boletin:before { content: '\a807'; } /* 'ꠇ' */
+ .pers-ss:before { content: '\a808'; } /* 'ꠈ' */
+ .pers-bach:before { content: '\a809'; } /* 'ꠉ' */
+ .pers-prim:before { content: '\a80a'; } /* 'ꠊ' */
+ .pers-extra:before { content: '\a80b'; } /* 'ꠋ' */
+ .pers-contacto:before { content: '\a80c'; } /* 'ꠌ' */
+ .pers-phidias:before { content: '\a80d'; } /* 'ꠍ' */
+ .pers-asopanglo:before { content: '\a80e'; } /* 'ꠎ' */
+ .video-responsive {
+     position: relative;
+     padding-bottom: 56.25%; /* 16/9 ratio */
+     padding-top: 30px; /* IE6 workaround*/
+     height: 0;
+     overflow: hidden;
+ }
+ .video-responsive iframe,
+ .video-responsive object,
+ .video-responsive embed {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
+ /*MOBILES*/
+ @media (max-width: 768px){
+   
+   .circulares>.body {
+    
+    background-color: #F5F5F6;
+	}
+   
+   	.com_bagrid .body {
+    	margin-top: 80px !important;
+	}
+     .open-menu {
+         position: absolute !important;
+         margin: 0 -15px 0 0 !important;
+         right: 0 !important;
+         z-index: 6 !important;
+     }
+
+     .header.custom-header.center-inline:before {
+       top: 53px !important;
+       color: #cccccc !important;
+       font-size: 0.7em !important;
+       left: 5.1% !important;
+     }
+     .joomla-modules[data-module="SCLogin-mobile"], .joomla-modules[data-module="language-switcher-mobile"] {
+         margin-top: 45px !important;
+     }
+     .mod-languageslanguage-switcher-mobile{
+         position: absolute !important;
+         float: left !important;
+         right: 90px !important;
+         margin: 0 -15px 0 0 !important;
+         z-index: 25;
+
+     }
+     .header .sclogin span, .header .sclogin-modal-links {
+         padding: 0 !important;
+         width: 30% !important;
+     }
+     .sourcecoast .control-group {
+         width: 95%;
+         text-align: center;
+     }
+     .logo a img {
+		max-width: 150px;
+         margin: -18px 0 0 -15px;
+
+     }
+     .ba-row-wrapper .ba-row.row-fluid.row-header {
+         background-color: #6d6e71 !important;
+     }
+     body, .ba-grid-column, .ba-row, .ba-section {
+         background-attachment: fixed !important;
+     }
+     .content-text h1 span {
+         font-size: 13vw !important;
+     }
+ }
+ /*Submenu secciones*/
+   #navbar_rp {
+      overflow: hidden;
+      background-color: #4e4e4e;
+      border-radius: 3px;
+   }
+
+   #navbar_rp a {
+     float: left;
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+   }
+
+   #navbar_rp a:hover {
+     background-color: #8e9cf4;
+     color: black;
+   }
+
+   #navbar_rp a.active {
+     background-color: #4CAF50;
+     color: white;
+   }
+
+   #navbar_rp li:first-child {
+        background-color: #89C565;
+        color: white;
+   }
+
+   .sticky_rp {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 1;
+   }
+
+.sourcecoast .btn {
+    border: 0;
+    background-image: none;
+    background-color: #333;
+    padding: 0 !important
+}
+.com_users .btn-primary {
+  height: 20px !important;
+  padding: 10px 13px !important;
+}
+.controls .btn-primary {
+    height: 40px !important;
+}
+
+.sourcecoast .sclogin-joomla-login .btn-primary {
+   padding: 0 !important;
+}
+
+.sourcecoast .btn-primary {
+    padding: 10px 13px !important;
+    margin-right: 0px !important;
+    background-color: #5ab300 !important;
+}
